@@ -1,3 +1,10 @@
-import { User, Users, FetchUsersHandler } from './users';
+import { FetchUsersHandler, User, Users } from './users';
+import { ToggleableMenuProps, ToggleableMenuState } from './menu';
 
-export { User, Users, FetchUsersHandler };
+export {
+  User,
+  Users,
+  FetchUsersHandler,
+  ToggleableMenuProps,
+  ToggleableMenuState
+};
