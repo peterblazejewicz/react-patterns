@@ -7,8 +7,8 @@ export interface UserListProps {
 
 const UserList: SFC<UserListProps> = props => (
   <ul>
-    {props.users.map(u => (
-      <li>
+    {props.users.map((u, index) => (
+      <li key={index}>
         {u.name} - {u.age} years old
       </li>
     ))}

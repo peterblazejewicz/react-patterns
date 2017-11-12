@@ -4,3 +4,5 @@ export interface User {
 }
 
 export interface Users extends Array<User> {}
+
+export type FetchUsersHandler = (users: Users) => void;
