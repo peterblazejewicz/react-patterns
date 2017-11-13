@@ -1,13 +1,7 @@
 import React, { Component, MouseEvent } from 'react';
 import { Button } from './Button';
+import { ButtonCounterProps, ButtonCounterState } from '../Model';
 
-export interface ButtonCounterState {
-  clicks: number;
-}
-
-export interface ButtonCounterProps {
-  clicks?: number;
-}
 class ButtonCounter extends Component<ButtonCounterProps, ButtonCounterState> {
   static defaultProps: ButtonCounterProps = {
     clicks: 0

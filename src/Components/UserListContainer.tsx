@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import UserList from './UserList';
 import { fetchUsers } from '../Utils';
-import { Users } from '../Model/users';
-
-export interface UserListContainerProps {
-  users?: Users;
-}
-
-export interface UserListContainerState {
-  users: Users;
-}
+import { UserListContainerProps, UserListContainerState } from '../Model/users';
 
 class UserListContainer extends Component<
   UserListContainerProps,

@@ -1,9 +1,5 @@
 import React, { SFC } from 'react';
-import { Users } from '../Model/users';
-
-export interface UserListProps {
-  users: Users;
-}
+import { UserListProps } from '../Model/users';
 
 const UserList: SFC<UserListProps> = props => (
   <ul>

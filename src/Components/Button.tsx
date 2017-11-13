@@ -1,9 +1,5 @@
-import React, { SFC, MouseEvent } from 'react';
-
-export interface ButtonProps {
-  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  text: string;
-}
+import React, { SFC } from 'react';
+import { ButtonProps } from '../Model';
 
 export const Button: SFC<ButtonProps> = props => (
   <button onClick={props.onClick}>{props.text}</button>
